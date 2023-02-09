@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+
+    <header>
+        <img src="./img/logo.png" alt="logo" class="logo">
+    </header>
+
+    <main>
+
+        <div class="contenedor">
+            
+            <div class="contenedor-izq">
+                    <div class="caja-izq">
+                            <div class="caja-texto">
+                                <!-- <input type="text" name="" id="" placeholder="Ingrese el texto aquí" class="texto"> -->
+                                <textarea name="" id="" cols="20" rows="5" placeholder="Ingrese el texto aquí" class="texto"></textarea>
+                                <!-- <input type="text" placeholder="Ingrese el texto aquí"> -->
+                            </div>
+                            <div class="caja-botones">
+                                <p class="condiciones"><i class="fi fi-sr-exclamation"></i>  Sólo minúsculas y sin acentos</p>
+                                <div class="botones">
+                                    <button class="boton-encriptar">Encriptar</button>
+                                    <button class="boton-desencriptar">Desencriptar</button>
+                                </div>  
+                            </div>
+                    </div>
+            </div>
+    
+            <div class="contenedor-der">
+                    <div class="caja-der">
+                            <img src="./img/figura.png" alt="" class="figura">
+                            <h2 class="alerta">Ningún mensaje fue encontrado</h2>
+                            <textarea id="contenido" cols="30" rows="10" placeholder="Ingrese el texto que desea encriptar o desencriptar." class="mensaje"></textarea>
+                            <button class="copiar">Copiar</button>
+                           
+                    </div>
+            </div>   
+        </div>
+
+    </main>
+</body>
+
+<script src="./js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>
