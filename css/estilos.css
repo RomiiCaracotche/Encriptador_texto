@@ -39,14 +39,19 @@ body{
 .contenedor-secun-izq__texto {
     height: 30%;
     padding: 1.5rem;
-    color: rgb(0, 23, 31);
+    color: rgb(0, 0, 255);
     font-weight: 500;
     border-radius: .5rem;
     background-color: rgb(192, 192, 192);
     resize: none; 
+    border: 2px groove rgb(128, 128, 128);
 }
 
 .contenedor-izq-inf__condiciones{
+    display: inline-block;
+    border-radius: 1rem;
+    padding: .2rem .5rem;
+    background-color: rgba(1, 48, 62, .9);
     color: rgb(41, 240, 249);
     font-weight: 500;
     margin: 1.5rem 0;
@@ -73,19 +78,19 @@ body{
 .contenedor-botones__encriptar:hover {
     background-color: rgb(0, 13, 21);
     color: rgb(61, 185, 191);
-    border: 1px solid rgb(61, 185, 191);
+    border: 2px solid rgb(61, 185, 191);
 }
 
 .contenedor-botones__desencriptar, .contenedor-secun-der__copiar:hover{
     background-color: rgb(41, 240, 249);
     color: rgb(0, 23, 31);
-    border: 1px solid rgb(0, 23, 31);
+    border: 1px solid rgb(128, 128, 128);
 }
 
 .contenedor-botones__desencriptar:hover {
     background-color: rgb(11, 210, 219);
     color: rgb(0, 3, 11);
-    border: 1px solid rgb(0, 13, 21);
+    border: 2px solid rgb(128, 128, 128);
 }
 
 /*--------------------- Contenedor derecho ---------------------*/
@@ -117,6 +122,10 @@ body{
     min-height: auto;
     padding: 1rem;
     text-align: center;
+}
+
+.contenedor-secun-der__alerta, .contenedor-secun-der__figura{
+    border: 2px groove rgb(128, 128, 128);
 }
 
 .contenedor-secun-der__copiar {
