@@ -32,13 +32,12 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
-    margin-right: 2rem;
+    width: 40%;
+    margin-left: auto;
 }
 
 .contenedor-secun-izq__texto {
-    height: 50%;
-    margin-top: 30%;
+    height: 30%;
     padding: 1.5rem;
     color: rgb(0, 23, 31);
     font-weight: 500;
@@ -47,20 +46,15 @@ body{
     resize: none; 
 }
 
-.contenedor-izq-inf{
-    height: 20%;
-}
-
 .contenedor-izq-inf__condiciones{
     color: rgb(41, 240, 249);
     font-weight: 500;
-    margin: 1rem 0;
+    margin: 1.5rem 0;
 }
 
 .contenedor-botones {
     display: flex;
     justify-content: space-between;
-    height: 100%;
 }
 
 .contenedor-botones__boton {
@@ -100,13 +94,13 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
-    margin: 2rem 0 2rem 7rem;
+    width: 30%;
+    margin: auto;
     border-radius: .5rem;
 }
 
 .contenedor-secun-der__item {
-    width: 80%;
+    width: 70%;
     margin: .5rem;
     padding: 1rem;
     background-color: rgba(1, 48, 62, .9);
@@ -117,7 +111,8 @@ body{
 
 .contenedor-secun-der__mensaje{
     resize: none;
-    height: 80%;
+    overflow: hidden;
+    padding: .5rem;
 }
 
 .contenedor-secun-der__copiar {
@@ -155,6 +150,10 @@ body{
         margin-top: 2rem;
     }
 
+    .contenedor-izq-inf__condiciones{
+        margin: 2rem auto;
+    }
+
     .contenedor-botones {
         flex-direction: column;
     }
@@ -167,7 +166,7 @@ body{
     /*-------------- Contenedor derecho --------------*/
 
     .contenedor-secun-der {
-        justify-content: center;
+        justify-content: start;
         width: 100vw;
         height: 50%;
         margin: 0 auto;
@@ -179,7 +178,7 @@ body{
     }
     
     .contenedor-secun-der__mensaje {
-        height: 40%;
+        margin: 2rem auto 1rem auto;
     }
     
     .contenedor-secun-der__figura {
@@ -187,7 +186,7 @@ body{
     }
 
     .contenedor-secun-der__alerta {
-        margin-top: 3rem;
+        margin-top: 0;
     }
 
 }
@@ -214,7 +213,7 @@ body{
 
     .contenedor-secun-izq__texto {
         height: 65%;
-        margin-top: 0;
+        margin-top: 1rem;
     }
 
     .contenedor-izq-inf__condiciones{
@@ -247,23 +246,28 @@ body{
 
     .contenedor-secun-der__figura {
         width: 40%;
-        margin-top: 2rem;
+        order: 1;
     }
     
     .contenedor-secun-der__mensaje {
-        margin: 2rem auto;
-        height: auto;
+        margin: 1rem auto;
+        width: 90%;
+        padding-top: 1.5rem;
+        overflow: hidden;
+        order: 2;
     }
     
-
     .contenedor-secun-der__alerta {
+        padding: 1.5rem;
         width: 40%;
         height: auto;
+        
     }
 
     .contenedor-secun-der__copiar {
         height: 3rem;
         margin: 1rem auto;
+        order: 5;
     }
 }
 
