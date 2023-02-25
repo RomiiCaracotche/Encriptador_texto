@@ -10,34 +10,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
+    
+        <header>
+            <div class="logo">
+                <img class="logo__img" src="./img/logo.png" alt="logo"> 
+            </div>  
+        </header>
 
-    <header>
-        <img class="logo" src="./img/logo.png" alt="logo">  
-    </header>
+        <main>
+            <div class="contenedor">
 
-    <main>
-        <div class="contenedor">
-
-                    <div class="contenedor-secun-izq">
-                        <textarea class="contenedor-secun-izq__texto" name="" id="" cols="20" rows="5" placeholder="Ingrese el texto aquí" ></textarea>
-                        <div class="contenedor-izq-inf">
-                            <p class="contenedor-izq-inf__condiciones"><i class="fi fi-sr-exclamation"></i> Sólo minúsculas y sin acentos</p>
-                            <div class="contenedor-botones">
-                                <button class="contenedor-botones__boton contenedor-botones__encriptar">Encriptar</button>
-                                <button class="contenedor-botones__boton contenedor-botones__desencriptar">Desencriptar</button>
-                            </div>  
+                        <div class="contenedor-secun-izq">
+                            <textarea class="contenedor-secun-izq__texto" name="" id="" cols="20" rows="5" placeholder="Ingrese el texto aquí" ></textarea>
+                            <div class="contenedor-izq-inf">
+                                <p class="contenedor-izq-inf__condiciones"><i class="fi fi-sr-exclamation"></i> Sólo minúsculas y sin acentos</p>
+                                <div class="contenedor-botones">
+                                    <button class="contenedor-botones__boton contenedor-botones__encriptar">Encriptar</button>
+                                    <button class="contenedor-botones__boton contenedor-botones__desencriptar">Desencriptar</button>
+                                </div>  
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="contenedor-secun-der">
-                        <img class="contenedor-secun-der__item contenedor-secun-der__figura" src="./img/figura.png" alt="">
-                        <textarea class="contenedor-secun-der__item contenedor-secun-der__mensaje" id="contenido" readonly>Ingrese el texto que desea encriptar o desencriptar.</textarea>  
-                        <h2 class="contenedor-secun-der__item contenedor-secun-der__alerta">Ningún mensaje fue encontrado</h2>
-                        <button class="contenedor-secun-der__item contenedor-secun-der__copiar">Copiar</button>    
-                    </div>      
+                        <div class="contenedor-secun-der">
+                            <img class="contenedor-secun-der__item contenedor-secun-der__figura" src="./img/figura.png" alt="">
+                            <textarea class="contenedor-secun-der__item contenedor-secun-der__mensaje" id="contenido" readonly>Ingrese el texto que desea encriptar o desencriptar.</textarea>  
+                            <h2 class="contenedor-secun-der__item contenedor-secun-der__alerta">Ningún mensaje fue encontrado</h2>
+                            <button class="contenedor-secun-der__item contenedor-secun-der__copiar">Copiar</button>    
+                        </div>      
 
-        </div>
-    </main>
+            </div>
+        </main>
 
 </body>
 

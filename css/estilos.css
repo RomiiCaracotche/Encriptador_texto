@@ -7,26 +7,31 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
-    box-sizing: border-box;
+body {
     background-image: url("./../img/encriptador.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .logo {
-    position: absolute;
-    left: 10px;
-    top: 40px;
+    display: flex;
+    justify-content: start;
+    margin: 1.5rem 0;
+}
+
+.logo__img {
     width: 120px;
+}
+
+main{
+    height: calc(100vh - 96px);
+    overflow-y: auto;
 }
 
 .contenedor {
     display: flex;
     justify-content: center;
-    align-content: center;
-    height: 100vh;
+    align-content: center;   
 }
 
 /*--------------------- Contenedor izquierdo ---------------------*/
@@ -101,16 +106,14 @@ body{
 .contenedor-secun-der {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
     border-radius: .5rem;
     width: 30%;
     margin: auto;
 }
 
 .contenedor-secun-der__item {
-    width: 100%;
-    margin: .5rem;
+    width: 60%;;
+    margin: .5rem 2rem;
     padding: 1rem;
     background-color: rgba(1, 48, 62, .9);
     border-radius: .5rem;
@@ -128,7 +131,12 @@ body{
     text-align: center;
 }
 
-.contenedor-secun-der__alerta, .contenedor-secun-der__figura{
+.contenedor-secun-der__figura {
+    border: 2px groove rgb(128, 128, 128);
+    
+}
+
+.contenedor-secun-der__alerta {
     border: 2px groove rgb(128, 128, 128);
 }
 
@@ -143,14 +151,6 @@ body{
 
 @media screen and (max-width: 400px) {
 
-    body {
-        height: 750px;
-    }
-
-    .logo {
-        left: 0;
-    }
-
     .contenedor {
         flex-direction: column;
         justify-content: start;
@@ -160,7 +160,7 @@ body{
 
     .contenedor-secun-izq {
         width: 90vw;
-        margin: 7rem auto 0 auto;
+        margin: 0 auto;
         justify-content: start;
     }
 
@@ -171,7 +171,7 @@ body{
     }
 
     .contenedor-izq-inf__condiciones{
-        margin: 1rem auto;
+        margin: 1.5rem auto;
     }
 
     .contenedor-botones {
@@ -180,7 +180,7 @@ body{
 
     .contenedor-botones__boton {
         width: 100%;
-        margin-bottom: .5rem;
+        margin-bottom: 1rem;
     }
 
     /*-------------- Contenedor derecho --------------*/
@@ -217,26 +217,17 @@ body{
 
 @media screen and (min-width: 400px) and (max-width: 768px) {
 
-    body {
-        height: 1300px;
-    }
-
-    .logo {
-        top: 70px;
-    }
-
     .contenedor {
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        margin-top: 4rem;
     }
 
     /*-------------- Contenedor izquierdo --------------*/
 
     .contenedor-secun-izq {
         width: 90vw;
-        margin: 15rem auto 1rem auto;
+        margin: 0 auto 1rem auto;
         height: 70%;
         justify-content: start;
     }
@@ -263,7 +254,7 @@ body{
     .contenedor-secun-der {
         justify-content: start;
         width: 100vw;
-        height: 50%;
+        /*height: 50%;*/
         margin: 0 auto;
     }
 
@@ -274,10 +265,12 @@ body{
     .contenedor-secun-der__figura {
         width: 60%;
         margin-bottom: 2rem;
+        background-color: transparent;
+        border: none;
     }
     
     .contenedor-secun-der__mensaje {
-        margin: 1rem auto;
+        margin: 0 auto 1.5rem auto;
         width: 90%;
         padding-top: 1rem;
         overflow: hidden;
@@ -296,8 +289,11 @@ body{
     .contenedor-secun-der__copiar {
         width: 90%;
         height: 3rem;
-        margin: 1rem auto;
+        margin: .5rem auto;
         order: 5;
     }
 }
+
+
+
 
