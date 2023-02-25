@@ -24,28 +24,10 @@ encriptar.addEventListener('click', (e) => {
     else {
         let textoEncriptado = texto.replace(/e/mgi , "enter").replace(/o/mgi , "ober").replace(/i/mgi , "imes").replace(/a/mgi , "ai").replace(/u/mgi , "ufat");
         mensaje.innerHTML = textoEncriptado;
-        autosize(document.querySelectorAll('#contenido'));
-        /*mensaje.style.height = "auto";*/
+        autosize(document.querySelector('#contenido'));
         figura.style.display = "none";
         alerta.style.display = "none";
         copiar.style.display = "initial";
-
-        /*if (screen.width > 768) {
-            //pantalla grande
-            console.log("pc");
-            mensaje.style.height = "75%";
-            document.querySelector('.contenedor-secun-der').style.justifyContent = "space-between";
-        }
-        else {
-            if((screen.width > 375) && (screen.width < 768)) {
-                console.log("tablet");
-                //tablet
-            }
-            else {
-                console.log("celular");
-                //celular
-            }
-        }*/
     }
 });
 

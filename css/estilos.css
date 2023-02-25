@@ -107,12 +107,16 @@ body{
     border-radius: .5rem;
     text-align: center;
     color: rgb(192, 192, 192);
+    min-width: 250px;
 }
 
 .contenedor-secun-der__mensaje{
     resize: none;
-    overflow: hidden;
-    padding: .5rem;
+    overflow-y: auto;
+    max-height: 700px;
+    min-height: auto;
+    padding: 1rem;
+    text-align: center;
 }
 
 .contenedor-secun-der__copiar {
@@ -179,6 +183,7 @@ body{
     
     .contenedor-secun-der__mensaje {
         margin: 2rem auto 1rem auto;
+        max-height: 400px;
     }
     
     .contenedor-secun-der__figura {
@@ -231,8 +236,6 @@ body{
     /*-------------- Contenedor derecho --------------*/
 
     .contenedor-secun-der {
-        flex-direction: row;
-        flex-wrap: wrap;
         justify-content: start;
         width: 100vw;
         height: 50%;
@@ -240,7 +243,6 @@ body{
     }
 
     .contenedor-secun-der__item {
-        width: 90vw;
         margin: auto;
     }
 
@@ -255,13 +257,13 @@ body{
         padding-top: 1.5rem;
         overflow: hidden;
         order: 2;
+        max-height: 400px;
     }
     
     .contenedor-secun-der__alerta {
         padding: 1.5rem;
-        width: 40%;
-        height: auto;
-        
+        width: 90%;
+        margin-bottom: 1rem;
     }
 
     .contenedor-secun-der__copiar {
